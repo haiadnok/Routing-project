@@ -1,0 +1,26 @@
+<p>courses works!</p>
+
+
+<div class = 'container'>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+        <th>s.no</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = 'let items of courses; index as i'>
+        <td>{{i+1}}</td>
+     
+        <td>{{items.name}}</td>
+        <td>{{items.age}}</td>
+        <td>{{items.course}}</td>
+        <td>{{items.city}}</td>
+        
+    </tr>
+    </tbody>
+</table>

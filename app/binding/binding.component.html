@@ -1,0 +1,28 @@
+<h1>see the binding examples</h1>
+
+<input type="text" [(ngModel)] = "hello" placeholder="name" />
+<h3>{{hello}}</h3>
+
+<button (click) = 'increment()'>+</button>
+<span>count : {{currentCount}} </span>
+<button (click) = "decrement()">-</button>
+<br />
+<br />
+<br />
+
+<input type="text" [(ngModel)] = "welcome" placeholder="enter name" />
+<button (click) = "kk()"> submit </button>
+<h2 *ngIf = kkk> {{welcome}} </h2>
+<br /><br /><br />
+<button (click) = 'onclickme()'>click me </button>
+<h1 *ngIf = visible> above are examples of binding property........... </h1>
+<br /><br /><br />
+
+<div>
+<input type="text" [(ngModel)] = "name" placeholder="name enter" />
+<input type="number" [(ngModel)] = "age" placeholder="age enter" />
+<input type="text" [(ngModel)] = "place" placeholder="place enter" />
+</div>
+<h1>name of the candidate : {{name}} </h1>
+<h1>age of the candidate : {{age}} </h1>
+<h1>place of the candidate : {{place}} </h1>

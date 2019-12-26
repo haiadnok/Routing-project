@@ -1,0 +1,29 @@
+<p>trainers works!</p>
+
+
+<div class = 'container'>
+        <table class="table table-bordered">
+    <thead>
+        <tr>
+        <th>s.no</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>salary</th>
+        <th>course</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = 'let items of  trainers ; index as i'>
+        <td>{{i+1}}</td>
+     
+        <td>{{items.name}}</td>
+        <td>{{items.age}}</td>
+        <td>{{items.salary | currency : 'INR'}}</td>
+        <td>{{items.course}}</td>
+       
+        
+    </tr>
+    </tbody>
+</table>
+</div>
